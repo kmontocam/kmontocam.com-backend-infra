@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: axum
-          image: ghcr.io/kmontocam/kmontocam-backend:latest
+          image: ghcr.io/kmontocam/kmontocam.com-backend:latest
           imagePullPolicy: Always
           env:
             - name: DATABASE_URL
