@@ -11,6 +11,12 @@ labels:
       kmontocam.com/environment: prod
     includeTemplates: true
 
+patches:
+  - target:
+      version: v1
+      kind: Deployment
+    path: ./deployment.yaml
+
 secretGenerator:
   - name: kmontocam-backend
     namespace: kmontocam
