@@ -35,6 +35,8 @@ multibranchPipelineJob('kmontocam.com/backend') {
                     'hudson.plugins.git.extensions.impl.CloneOption' {
                         shallow(false)
                         noTags(false)
+                        reference('')
+                        honorRefspec(false)
                     }
                 }
             }
