@@ -12,8 +12,12 @@ spec:
       app: kmontocam-backend
   template:
     metadata:
+      annotations:
+        fluentbit.io/exclude_stderr-axum: "true"
+        fluentbit.io/parser_stdout-axum: logfmt
       labels:
         app: kmontocam-backend
+        devops.kmontocam.com/parse-logs: "true"
     spec:
       containers:
         - env:
